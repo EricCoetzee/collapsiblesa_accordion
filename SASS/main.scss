@@ -1,0 +1,40 @@
+@import './variables';
+
+.tip{
+    background-color: $mainColor;
+    color: $primaryColor;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 17px;
+    transition: 0.5s;
+
+    &:hover{
+        background-color: $primaryColor;
+        color: $secondaryColor;
+    }
+
+    &:after{
+        content: '\002B';
+        color: $secondaryColor;
+        font-weight: bold;
+        float: right;
+        margin-left: 5px;
+    }
+}
+
+.active:after{
+    content: '\2212';
+    color: $secondaryColor;
+}
+
+.wrapper{
+    padding: 0 18px;
+    background-color: $primaryColor;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}

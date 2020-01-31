@@ -1,0 +1,41 @@
+.tip {
+  background-color: lightblue;
+  color: snow;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 17px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.tip:hover {
+  background-color: snow;
+  color: black;
+}
+
+.tip:after {
+  content: '\002B';
+  color: black;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: '\2212';
+  color: black;
+}
+
+.wrapper {
+  padding: 0 18px;
+  background-color: snow;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.2s ease-out;
+  transition: max-height 0.2s ease-out;
+}
+/*# sourceMappingURL=main.css.map */
